@@ -1,0 +1,60 @@
+body{
+    background-color: bisque;
+}
+main{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: 
+    "h h"
+    "a n"
+    "f f"
+    ;
+}
+.box{
+    background-color: rgb(184, 153, 116);
+}
+header{
+    grid-area: h;
+}
+article{
+    grid-area: a;
+}
+nav{
+    grid-area: n;
+}
+footer{
+    grid-area: f;
+}
+@media all and (max-width: 1000px){
+    body{
+        background-color: rgb(203, 69, 15);
+    }
+    .box{
+        background-color: rgb(240, 146, 108);
+    }
+    main{
+        
+        grid-template-columns: 2fr 1fr;
+    }
+    
+}
+@media all and (max-width: 600px){
+    body{
+        background-color: rgb(133, 203, 222);
+    }
+    .box{
+        background-color: rgb(103, 105, 108);
+    }
+    main{
+        
+        grid-template-columns: 2fr;
+        grid-template-areas: 
+    "h"
+    "a"
+    "n"
+    "f"
+    ;
+    }
+    
+}
