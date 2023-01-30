@@ -9,17 +9,42 @@
 </head>
 <body>
     <main>
-        <header class="box">
-            <h1>Űrlapok gyakorlása</h1>
-        </header>
+        <header>
+        <h1>Űrlapok gyakorlása</h1></header>
+        
         <article class="box">
-    <form action="#" method="post">
-        <label for="vNev">Vezetéknév</label>
+        <form action="#" method="post">
+        <fieldset>
+        <legend>Adatok</legend>
+        <label class="formaslabel" for="vNev">Vezetéknév:</label>
         <input type="text" id="vNev" name="vezetekNev"> <br>
-        <label for="kNev">Keresztnév</label>
+        <label class="formaslabel" for="kNev">Keresztnév:</label>
         <input type="text" id="kNev" name="keresztnev"> <br>
-        <input type="submit" value="Küldés">
+      
+    </fieldset>
+    <input class="kozep" type="submit" value="Küldés" >
     </form>
+    
+    
+<form id="hatter2" action="/action.php" >
+    <fieldset>
+        <legend>Szereted Sarah J. Mass könyveit? Ha igen melyiket olvastad?</legend>
+  <input type="radio" id="igen" name="fav_language" value="HTML">
+  <label for="html">IGEN</label><br>
+  <input type="radio" id="nem" name="fav_language" value="CSS">
+  <label for="css">Nem (de igen)</label><br>
+  <input type="radio" id="megnem" name="fav_language" value="JavaScript">
+  <label for="javascript">Nem olvastam. (olvasd el bármelyiket, megéri :))</label><br>
+<input type="checkbox" id="vehicle1" name="tuske" value="Bike">
+  <label for="vehicle1"> Tüskék és rózsák udvara</label><br>
+  <input type="checkbox" id="uveg" name="vehicle2" value="Car">
+  <label for="vehicle2">Üvegtrón</label><br>
+  <input type="checkbox" id="cerscent" name="vehicle3" value="Boat">
+  <label for="vehicle3"> Crescent city</label><br><br>
+</fieldset>
+  
+</form> 
+<input class="kozep" type="submit" value="Submit">
 </article>
 <nav class="box">
 <ul>

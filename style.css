@@ -1,7 +1,10 @@
+
 body{
-    background-color: bisque;
+    background-image: url(kepek/background.jpg);
 }
 main{
+    width: 70%;
+    margin: 0 auto;
     display: grid;
     gap: 10px;
     grid-template-columns: 4fr 1fr;
@@ -11,31 +14,111 @@ main{
     "f f"
     ;
 }
+*{
+    box-sizing: border-box;
+}
 .box{
-    background-color: rgb(184, 153, 116);
+    background-color: rgb(13, 32, 64);
 }
 header{
+    height: 100px;
+    width: 100%;
+    background-size: coverw;
     grid-area: h;
+    background-image: url(kepek/header.jpg);
+    color: aliceblue;
+    font-weight: bold;
+   
+    text-align: center;
 }
 article{
     grid-area: a;
+    height: 80vh;;
 }
 nav{
     grid-area: n;
 }
+form{
+    font-weight: bold;
+    color: white;
+    background-image: url(kepek/img/vader.jpg);
+}
 footer{
+    color: white;
+    text-align: center;
     grid-area: f;
 }
+.formaslabel{
+    background-color: grey;
+    width: 30%;
+    float: left;
+    margin-right: 20px;
+    text-align: right;
+}
+.kozep{
+    box-shadow: 4px 4px 2px rgb(3, 3, 3);
+    display: block; 
+    margin: auto;    
+    margin-bottom: 40px;
+}
+#hatter2{
+    width: 100%;
+    background-image: url(kepek/hatter.jpg);
+    background-repeat: no-repeat;
+}
+input, label{
+margin-top: 20px;
+}
+fieldset{
+    border:rgb(17, 69, 80) 2px solid;
+    margin: 15px;
+    padding: 15px;
+}
+legend{
+    width: 30%;
+    text-align: right;
+    background-color: rgb(5, 5, 5);
+    color: antiquewhite;
+    border-radius: 5px;
+    padding: 2px 30px;
+}
+input{
+    padding: 5px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #8eadf1;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(7, 1, 76);
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: rgb(1, 4, 37);
+    color: white;
+  }
 @media all and (max-width: 1000px){
     body{
-        background-color: rgb(203, 69, 15);
+        background-color: rgb(17, 69, 80);
     }
     .box{
-        background-color: rgb(240, 146, 108);
+        background-color: rgb(158, 183, 209);
     }
     main{
         
         grid-template-columns: 2fr 1fr;
+    }
+    legend{
+        width: 30%;
+    text-align: right;
     }
     
 }
@@ -44,17 +127,21 @@ footer{
         background-color: rgb(133, 203, 222);
     }
     .box{
-        background-color: rgb(103, 105, 108);
+        background-color: rgb(178, 200, 231);
     }
     main{
-        
-        grid-template-columns: 2fr;
+        width: 100%;
+        grid-template-columns: 1fr;
         grid-template-areas: 
     "h"
-    "a"
     "n"
+    "a"
+    
     "f"
     ;
     }
     
+}
+ article, nav, footer {
+    background-color: rgb(185, 17, 201);
 }
